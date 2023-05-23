@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  /* ### Neutral */
+
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: var(--Cream);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.expenseFrame {
+  max-width: 450px;
+}
+
+.topFrame {
+  padding: 30px;
+  background-color: var(--Soft-red);
+  margin-bottom: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+}
+
+.balanceText {
+  font-size: 12px;
+  color: var(--Very-pale-orange);
+}
+
+.myAccount {
+  font-size: 18px;
+  color: var(--Very-pale-orange);
+}
+
+.mainContentFrame {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: var(--Very-pale-orange);
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--Dark-brown);
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.chartInfo {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--Cyan);
+  margin-bottom: 20px;
+}
+
+.totalExpense {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: "DM Sans", sans-serif;
+  font-size: 400;
+}
+
+.leftSide p {
+  font-size: 10px;
+  color: var(--Cyan);
+}
+
+.leftSide h2 {
+  font-size: 24px;
+}
+
+.rightSide {
+  text-align: right;
+}
+
+.index {
+  font-size: 12px;
+  color: var(--Dark-brown);
+}
+
+.duration {
+  font-size: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
