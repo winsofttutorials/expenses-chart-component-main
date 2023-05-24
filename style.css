@@ -81,9 +81,73 @@ main {
 
 .chartInfo {
   display: flex;
-  padding-bottom: 20px;
+  align-items: flex-end;
+  padding: 30px 0;
   border-bottom: 1px solid var(--Cyan);
   margin-bottom: 20px;
+}
+
+.barchart {
+  width: 30px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.barchart:hover::after {
+  content: attr(data-tooltip);
+  font-size: 12px;
+  position: absolute;
+  top: -35px;
+  width: max-content;
+  padding: 5px;
+  background-color: var(--Dark-brown);
+  color: var(--Cream);
+  border-radius: 3px;
+}
+
+.day {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  left: 5px;
+}
+.mon {
+  height: 30px;
+  background-color: var(--Soft-red);
+}
+
+.tue {
+  height: 50px;
+  background-color: var(--Soft-red);
+}
+
+.wed {
+  height: 105px;
+  background-color: var(--Cyan);
+}
+
+.thur {
+  height: 50px;
+  background-color: var(--Cream);
+}
+
+.fri {
+  height: 42px;
+  background-color: var(--Soft-red);
+}
+
+.sat {
+  height: 85px;
+  background-color: var(--Soft-red);
+}
+
+.sun {
+  height: 35px;
+  background-color: var(--Soft-red);
+  margin-right: 0;
 }
 
 .totalExpense {
@@ -116,10 +180,34 @@ main {
 .duration {
   font-size: 10px;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .logo {
+    width: 50px;
+  }
+
+  .expenseFrame {
+    max-width: 300px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    color: var(--Dark-brown);
+  }
+
+  .barchart {
+    width: 50px;
+    margin-right: 10px;
+  }
 }
